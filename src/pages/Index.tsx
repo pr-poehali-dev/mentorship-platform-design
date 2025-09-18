@@ -15,7 +15,7 @@ const Index = () => {
       rating: 4.9,
       reviews: 127,
       expertise: ["Математика", "Физика"],
-      price: "1500₽/час",
+
       experience: "5 лет",
       description: "Кандидат физико-математических наук, преподаватель МГУ",
       status: "online"
@@ -27,7 +27,7 @@ const Index = () => {
       rating: 4.8,
       reviews: 89,
       expertise: ["Программирование", "Алгоритмы"],
-      price: "2000₽/час",
+
       experience: "3 года",
       description: "Senior Developer в Яндексе, ментор по IT",
       status: "busy"
@@ -39,7 +39,7 @@ const Index = () => {
       rating: 4.9,
       reviews: 156,
       expertise: ["Английский", "Подготовка к ЕГЭ"],
-      price: "1200₽/час",
+
       experience: "7 лет",
       description: "Преподаватель английского языка, кембриджский сертификат",
       status: "online"
@@ -96,7 +96,7 @@ const Index = () => {
             <br />для своего развития
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Платформа для связи студентов и старшеклассников с опытными наставниками. 
+            Бесплатная платформа для связи студентов и старшеклассников с опытными наставниками. 
             Персональные консультации, подготовка к экзаменам, карьерное развитие.
           </p>
           
@@ -201,16 +201,13 @@ const Index = () => {
                   </div>
                   
                   <div className="flex items-center justify-between pt-2">
-                    <div className="space-y-1">
-                      <div className="text-lg font-bold text-primary">{mentor.price}</div>
-                      <div className="text-xs text-gray-500 flex items-center">
-                        <Icon name="Clock" size={12} className="mr-1" />
-                        Опыт {mentor.experience}
-                      </div>
+                    <div className="text-xs text-gray-500 flex items-center">
+                      <Icon name="Clock" size={12} className="mr-1" />
+                      Опыт {mentor.experience}
                     </div>
                     <Button size="sm">
                       <Icon name="Calendar" size={16} className="mr-2" />
-                      Записаться
+                      Записаться бесплатно
                     </Button>
                   </div>
                 </CardContent>
